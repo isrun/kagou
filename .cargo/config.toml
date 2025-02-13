@@ -1,0 +1,16 @@
+# 字节跳动镜像源
+# https://rsproxy.cn/#getStarted
+[source.crates-io]
+replace-with = 'rsproxy-sparse'
+[source.rsproxy]
+registry = "https://rsproxy.cn/crates.io-index"
+[source.rsproxy-sparse]
+registry = "sparse+https://rsproxy.cn/index/"
+[registries.rsproxy]
+index = "https://rsproxy.cn/crates.io-index"
+[net]
+git-fetch-with-cli = true
+
+# 使用 Rust 的官方镜像源
+# [source.crates-io]
+# registry = "https://github.com/rust-lang/crates.io-index"
